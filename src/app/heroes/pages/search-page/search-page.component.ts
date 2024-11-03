@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { Hero } from '../../interfaces/hero.interface';
-import { HeroService } from '../../services/heroes.service';
+import { HeroesService } from '../../services/heroes.service';
 import { MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
 
 @Component({
@@ -14,11 +14,11 @@ export class SearchPageComponent {
   public searchImput = new FormControl('');
   public heroes: Hero[] = [];
   public selectedHero?: Hero;
-  constructor(private heroService: HeroService) { }
+  constructor(private heroService: HeroesService) { }
 
   searchHero() {
     const value: string = this.searchImput.value || '';
-    this.heroService.getSugestions(value)
+    this.heroService.getSuggestions(value)
       .subscribe(heroes => this.heroes = heroes);
   }
 

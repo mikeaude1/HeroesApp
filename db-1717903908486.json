@@ -1,8 +1,8 @@
 {
   "users": [
     {
-      "id": 1,
-      "user": "John Doe",
+      "id": "1",
+      "usuario": "John Doe",
       "email": "john.due@gmail.com"
     }
   ],
@@ -12,7 +12,7 @@
       "superhero": "Batman",
       "publisher": "DC Comics",
       "alter_ego": "Bruce Wayne",
-      "first_appearance": "Detective Comics #27",
+      "first_appearance": "Mi Primer comic #2",
       "characters": "Bruce Wayne"
     },
     {
@@ -166,6 +166,9 @@
       "alter_ego": "Norrin Radd",
       "first_appearance": "The Fantastic Four #48",
       "characters": "Norrin Radd"
+    },
+    {
+      "id": "5119"
     }
   ]
 }
